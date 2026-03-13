@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay - Freetown Hotel and Suites</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="Hotel Demo.html"><h1>Freetown Hotel and Suites</h1></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="Hotel Demo.html#home">Home</a></li>
+                    <li><a href="Hotel Demo.html#rooms">Rooms</a></li>
+                    <li><a href="Hotel Demo.html#services">Services</a></li>
+                    <li><a href="Hotel Demo.html#gallery">Gallery</a></li>
+                    <li><a href="Hotel Demo.html#reviews">Reviews</a></li>
+                    <li><a href="Hotel Demo.html#contact">Contact</a></li>
+                    <li><a href="Book.html" class="active">Book Now</a></li>
+                </ul>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Simple Booking Form -->
+    <section class="booking-section section">
+        <div class="container">
+            <h2>Book a Room</h2>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="roomType">Room Type *</label>
+                        <select id="roomType" name="roomType" required>
+                            <option value="">Select Room Type</option>
+                            <option value="standard">Standard Room - ₦15,000/night</option>
+                            <option value="deluxe">Deluxe Room - ₦20,000/night</option>
+                            <option value="suite">Suite - ₦35,000/night</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkin">Check-in Date *</label>
+                        <input type="date" id="checkin" name="checkin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout">Check-out Date *</label>
+                        <input type="date" id="checkout" name="checkout" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Send Booking Request</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer copied from Hotel Demo.html -->
+    <footer>
+        <p>&copy; 2026 Freetown Hotel and Suites. All rights reserved.</p>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/2341234567890?text=Hello,%20I%20want%20to%20book%20a%20room%20at%20Freetown%20Hotel%20and%20Suites." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+    <script src="booking.js"></script>
+</body>
+</html>
